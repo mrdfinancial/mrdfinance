@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+{{ partial "page_title.html" . }}
+  <div class="ph3 ph4-m ph5-l flex items-stretch items-start flex-wrap flex-nowrap-l pb5">
+    <main class="pr4-l w-100 w-60-l">
+      <div class="content">
+        {{ .Content }}
+      </div>
+      <form name="partner_enquery" netlify class="w-100 w-70-m w-60-li mb4">
+        <div class="flex items-start flex-wrap nl2 nr2">
+          <div class="w-100 w-50-ns ph2">
+            <label class="db ttu tracked gray b mb1 f6">Name</label>
+            <input name="name" id="name" type="text" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+          </div>
+          <div class="w-100 w-50-ns ph2">
+            <label class="db ttu tracked gray b mb1 f6">Email</label>
+            <input name="email" id="email" type="email" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+          </div>
+          <div class="w-100 w-50-ns ph2">
+            <label class="db ttu tracked gray b mb1 f6">Mobile No</label>
+            <input name="mobile_no" id="mobile_no" type="number" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+          </div>
+          <div class="w-100 w-50-ns ph2">
+            <label class="db ttu tracked gray b mb1 f6">Address</label>
+            <input name="address" id="address" type="text" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+          </div>
+          <div class="w-100 ph2">
+            <label class="db ttu tracked gray b mb1 f6">Profile</label>
+            <textarea name="profile" id="profile" rows="4" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="bn pa3 bg-navy white hover-bg-navy b ttu tracked br2">Submit</button>
+      </form>
+    </main>
+  </div>
+{{ partial "footer.html" . }}

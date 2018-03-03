@@ -1,0 +1,4 @@
+baseURL = "https://MRD.netlify.com/"
+languageCode = "en-us"
+title = "MRD Finance"
+theme = "sm-mrd"

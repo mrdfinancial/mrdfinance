@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+{{ partial "page_title.html" . }}
+<!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
+<link href='{{ "dist/bb.min.css" | absURL}}' rel="stylesheet"/>
+<script type="text/javascript" src='{{ "dist/bb.min.js" | absURL}}'></script>
+  <div class="ph3 ph4-m ph5-l " >
+    <div class="content w-100 mb3">
+      {{ .Content }}
+    </div>
+    <main class="flex items-stretch items-start flex-wrap pb1 gallery">
+      {{ range .Site.Data.awards.awards }}
+      <div class="ph3 w-100 w-third-m w-25-l mb5 tc">
+        <a href="{{ (trim .image "/") | absURL }}" class="block mb2 ">
+          <div class="square"><div class="content" style="background-image:url('{{ (trim .image "/") | absURL }}')"></div></div>
+          </a>
+      </div>
+      {{ end }} 
+    </main>
+  </div>
+{{ partial "footer.html" . }}
+<script>
+ baguetteBox.run('.gallery');
+</script>

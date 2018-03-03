@@ -1,0 +1,87 @@
+{{ partial "header.html" . }}
+{{ partial "page_title.html" . }}
+
+<div class="ph3 ph4-m ph5-l flex items-stretch items-start flex-wrap flex-nowrap-l pb5">
+    <main class="pr4-l w-100 w-60-l">
+      <div class="aspect-ratio w-100 aspect-ratio--16x9 mb4">
+        <div class="aspect-ratio--object z-2 bg-center cover" style="background-image: url(' {{ (trim .Params.featured_image "/") | absURL }}')"></div>
+       </div>
+	<form name="loandata">
+	  	<div class="f4 w-100 ph2 m2 b bb b--black-10 mb3 pv2 tc navy ttu">Enter Loan Information</div>
+	  	<table class="w-100">
+		  	<tr>
+		      <td></td>
+		      <td class="db ttu tracked gray b mb1 f6 mt3">Amount of the loan (any currency):</td>
+		      <td>
+		      	<input class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" type="text" name=principal onChange="calculate()"></td>
+		    </tr>
+		    <tr>	
+		      <td></td>
+		      <td class="db ttu tracked gray b mb1 f6 mt3">Annual percentage rate of interest:</td>
+		      <td><input class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" type="text" name=interest onChange="calculate()"></td>
+		    </tr>
+		    <tr>
+		      <td></td>
+		      <td class="db ttu tracked gray b mb1 f6 mt3">Repayment period in years:</td>
+		      <td><input class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" type="text" name=years onChange="calculate()"></td>
+		    </tr>
+	    </table>
+	  	<div class="flex justify-center">
+	        <input type=button value="Clculate" class="bn pa3 bg-navy white hover-bg-dark-navy b ttu tracked br2 mt3" onClick="calculate()"></div>
+	        
+	    <div class="f4 w-100 ph2 m2 b bb b--black-10 mb3 pv2 tc navy ttu">Payment Information</div>
+		<table class="w-100">
+		  	<tr>
+		      <td></td>
+		      <td class="db ttu tracked gray b mb1 f6 mt3">Your monthly payment will be:</td>
+		      <td>
+		      	<input name="payment" type="text" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" disabled></td>
+		    </tr><tr>
+		      <td></td>
+		      <td class="db ttu tracked gray b mb1 f6 mt3">Your total payment will be:</td>
+		      <td>
+		      	<input name="total" type="text" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" disabled ></td>
+		    </tr>
+		    <tr>
+		      <td></td>
+		      <td class="db ttu tracked gray b mb1 f6 mt3">Your total interest payments will be:</td>
+		      <td>
+		      	<input name="totalinterest" type="text" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" disabled></td>
+		    </tr>
+		</table>
+	</form>
+	</main>   
+    {{ partial "award.html" . }}
+ </div>
+
+{{ partial "footer.html" . }}
+
+<script>
+    function calculate() {
+    var principal = document.loandata.principal.value;
+    var interest = document.loandata.interest.value / 100 / 12;
+    var payments = document.loandata.years.value * 12;
+
+    var x = Math.pow(1 + interest, payments);
+    var monthly = (principal*x*interest)/(x-1);
+
+	    if (!isNaN(monthly) && 
+	        (monthly != Number.POSITIVE_INFINITY) &&
+	        (monthly != Number.NEGATIVE_INFINITY)) {
+
+	        document.loandata.payment.value = round(monthly);
+	        document.loandata.total.value = round(monthly * payments)
+	        document.loandata.totalinterest.value = round((monthly * payments) - principal);
+	    }
+	    else {
+	        document.loandata.payment.value = "";
+	        document.loandata.total.value = "";
+	        document.loandata.totalinterest.value = "";
+	    }
+	}
+
+
+	function round(x) {
+	  return Math.round(x*100)/100;
+	}
+</script>

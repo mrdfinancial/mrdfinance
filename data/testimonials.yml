@@ -1,0 +1,25 @@
+testimonials:
+  - name: "ABC XYZ"
+    company: ""
+    designation: "Employee"
+    image: images/person1.jpg
+    service_taken: "Home Loan"
+    testimonial: "I got a fantastic service"
+  - name: "ABC XYZ"
+    company: ""
+    designation: "Manager"
+    image: images/person2.jpg
+    service_taken: "Home Loan"
+    testimonial: "I got a very good service"
+  - name: "ABC XYZ"
+    company: ""
+    designation: "Designation"
+    image: images/person3.jpg
+    service_taken: "Home Loan"
+    testimonial: "I got a fabulous service"
+  - name: "ABC XYZ"
+    company: ""
+    designation: "Designation"
+    image: images/person4.jpg
+    service_taken: "Home Loan"
+    testimonial: "I got a Best service"
