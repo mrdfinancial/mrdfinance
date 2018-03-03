@@ -32,7 +32,7 @@
       {{ range .Site.Data.associations.associations }}
       <li>
         <div class="aspect-ratio aspect-ratio--16x9 br2 br--top w-100 overflow-hidden z-1">
-          <div class="aspect-ratio--object contain bg-center grow" style="background-image: url('{{ ( trim .image "/" ) | absURL}}')"></div>
+          <div class="aspect-ratio--object contain bg-center" style="background-image: url('{{ ( trim .image "/" ) | absURL}}')"></div>
         </div>
       </li>
         {{end}}
