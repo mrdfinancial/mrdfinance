@@ -5,7 +5,7 @@ associations:
     image: images/2.jpg
   - name: "Bajaj Capital Ltd"
     image: images/3.png
-  - name: "Dewan Housing Finance Corporation Ltd. (DHFL)"
+  - name: "Dewan Housing Finance Corporation Ltd."
     image: images/4.jpg
   - name: "Fullerton India Credit Co. Ltd"
     image: images/5.jpg

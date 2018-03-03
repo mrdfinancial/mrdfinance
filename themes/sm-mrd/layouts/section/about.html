@@ -5,11 +5,12 @@
         <div class="aspect-ratio w-100 aspect-ratio--16x9 mb4">
           <div class="aspect-ratio--object z-2 bg-center cover" style="background-image: url(' {{ (trim .Params.featured_image "/") | absURL }}')"></div>
         </div>
-        <div class="content mb5">
+      </main>
+      <main class="pr4-l w-100 w-60-l bg-near-white ">
+        <div class="content ml3">
           {{ .Content }}
         </div>
       </main>
-      {{ partial "award.html" . }}
   </div>
 
 {{ partial "footer.html" . }}

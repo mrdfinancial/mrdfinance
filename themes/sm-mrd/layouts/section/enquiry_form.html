@@ -5,9 +5,11 @@
         <div class="aspect-ratio w-100 aspect-ratio--16x9 mb4">
           <div class="aspect-ratio--object z-2 bg-center cover" style="background-image: url(' {{ (trim .Params.featured_image "/") | absURL }}')"></div>
         </div>
-        <div class="content">
+        <div class="content b f4">
           {{ .Content }}
         </div>
+      </main>
+      <main class="pr4-l w-100 w-60-l">
         <form name="enquery" netlify class="w-100 w-70-m w-60-li mb4">
           <div class="flex items-start flex-wrap nl2 nr2">
             <div class="w-100 w-50-ns ph2">
@@ -40,13 +42,13 @@
             </div>
             <div class="w-100 ph2">
               <label class="db ttu tracked gray b mb1 f6">Preferable time to talk</label>
-              <input name="mobile_no" id="mobile_no" type="number" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+              <input name="preferable_time_to_talk" id="preferable_time_to_talk" type="text" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
             </div>
             
           </div>
           <button type="submit" class="bn pa3 bg-navy white hover-bg-navy b ttu tracked br2">Submit</button>
         </form>
       </main>
-      {{ partial "association.html" . }}
+      <!-- {{ partial "association.html" . }} -->
   </div>
 {{ partial "footer.html" . }}

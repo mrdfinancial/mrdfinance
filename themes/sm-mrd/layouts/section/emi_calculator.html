@@ -6,8 +6,10 @@
       <div class="aspect-ratio w-100 aspect-ratio--16x9 mb4">
         <div class="aspect-ratio--object z-2 bg-center cover" style="background-image: url(' {{ (trim .Params.featured_image "/") | absURL }}')"></div>
        </div>
-	<form name="loandata">
-	  	<div class="f4 w-100 ph2 m2 b bb b--black-10 mb3 pv2 tc navy ttu">Enter Loan Information</div>
+	</main>
+	<main class="pr4-l w-100 w-60-l">
+		<form name="loandata">
+	  	<div class="f3 w-100 ph2 m2 b bb b--black-10 mb3 pv2 tc navy ttu">Enter Loan Information</div>
 	  	<table class="w-100">
 		  	<tr>
 		      <td></td>
@@ -29,7 +31,7 @@
 	  	<div class="flex justify-center">
 	        <input type=button value="Clculate" class="bn pa3 bg-navy white hover-bg-dark-navy b ttu tracked br2 mt3" onClick="calculate()"></div>
 	        
-	    <div class="f4 w-100 ph2 m2 b bb b--black-10 mb3 pv2 tc navy ttu">Payment Information</div>
+	    <div class="f3 w-100 ph2 m2 b bb b--black-10 mb3 pv2 tc navy ttu">Payment Information</div>
 		<table class="w-100">
 		  	<tr>
 		      <td></td>
@@ -50,8 +52,7 @@
 		    </tr>
 		</table>
 	</form>
-	</main>   
-    {{ partial "award.html" . }}
+	</main>
  </div>
 
 {{ partial "footer.html" . }}
