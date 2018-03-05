@@ -12,7 +12,7 @@
   </div>
   <ul class="list-reset mb3" style="list-style: none;">
     {{ range $currentSection.ByTitle }}
-      <li class="ph3 pv3">
+      <li class="">
         <a href="{{ .URL }}" class="sidelink{{ if eq $currentPageUrl .URL }} active{{end}} link navy caps">
           {{ .Title }}
         </a>

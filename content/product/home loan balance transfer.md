@@ -1,8 +1,8 @@
 ---
-title: Loan for Purchase of Commercial Property
+title: Home Loan Balance Transfer
 seo_keywords: MRD Finance
 seo_description: MRD Finance
-featured_image: images/product_one.jpg
+featured_image: images/product_two.jpg
 ---
 
 ## Our Way of Recruiting
