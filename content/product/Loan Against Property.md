@@ -14,20 +14,20 @@ A loan against property (LAP) is a loan given or disbursed against the mortgage 
 
 ### Loan against Property can be taken for following purposes:
 
-1. Expanding your business
+* Expanding your business
 
-2. For your working capital need
+* For your working capital need
 
-3. Converting working capital limit to term loan
+* Converting working capital limit to term loan
 
-4. Debt consolidation
+* Debt consolidation
 
-5. Purchase of plant, machinery and land
+* Purchase of plant, machinery and land
 
-6. Getting your son/daughter married
+* Getting your son/daughter married
 
-7. Sending your son/daughter for higher studies
+* Sending your son/daughter for higher studies
 
-8. Funding your dream vacation
+* Funding your dream vacation
 
-9. Funding medical treatments
+* Funding medical treatments
