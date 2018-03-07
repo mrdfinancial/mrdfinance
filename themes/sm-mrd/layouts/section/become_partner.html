@@ -2,10 +2,15 @@
 {{ partial "page_title.html" . }}
 {{ partial "fixed_icon.html" . }}
   <div class="ph3 ph4-m ph5-l flex items-stretch items-start flex-wrap flex-nowrap-l pb5">
-    <main class="pr4-l w-100 w-60-l">
-      <div class="content">
+  <main class="pr4-l w-100 w-60-l">
+      <div class="aspect-ratio w-100 aspect-ratio--16x9 mb4">
+        <div class="aspect-ratio--object z-2 bg-center cover" style="background-image: url(' {{ (trim .Params.featured_image "/") | absURL }}')"></div>
+      </div>
+      <div class="content b f4">
         {{ .Content }}
       </div>
+    </main>
+    <main class="pr4-l w-100 w-60-l">
       <form name="partner_enquery" netlify class="w-100 w-70-m w-60-li mb4">
         <div class="flex items-start flex-wrap nl2 nr2">
           <div class="w-100 w-50-ns ph2">
