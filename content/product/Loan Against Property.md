@@ -5,11 +5,29 @@ seo_description: MRD Finance
 featured_image: images/product_two.jpg
 ---
 
-## Our Way of Recruiting
+## What is a loan against property?
 
-1. We act as an advisor to the companies to understand their requirements and provide them with the right candidate.
+Loan against property belongs to the secured loan category where the borrower gives a guarantee by using his property as security.
+A loan against property (LAP) is a loan given or disbursed against the mortgage of property. The loan is given as a certain percentage of the property’s market value, usually around 40 per cent to 70 per cent and gets tenor 7 to 15 years. The tenure of the loan is also dependent on the customer’s profile, age of customer at maturity of loan, age of property at loan maturity
 
-2. We go through the deliberate interview sessions with one to one candidates to understand their potentialities to handle the core works.
+## What purposes can I take a loan against property for?
 
-3. We bring the best in the company and the candidate by amalgamating the objectives of both the company and the candidate.
+### Loan against Property can be taken for following purposes:
 
+1. Expanding your business
+
+2. For your working capital need
+
+3. Converting working capital limit to term loan
+
+4. Debt consolidation
+
+5. Purchase of plant, machinery and land
+
+6. Getting your son/daughter married
+
+7. Sending your son/daughter for higher studies
+
+8. Funding your dream vacation
+
+9. Funding medical treatments

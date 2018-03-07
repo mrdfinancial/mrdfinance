@@ -5,11 +5,11 @@ seo_description: MRD Finance
 featured_image: images/product_two.jpg
 ---
 
-## Our Way of Recruiting
+## Unsecured Business Loan -
 
-1. We act as an advisor to the companies to understand their requirements and provide them with the right candidate.
+Unsecured loans are loans that are approved without the need for collateral. Instead of pledging assets, borrowers qualify based on their credit history and income . 
 
-2. We go through the deliberate interview sessions with one to one candidates to understand their potentialities to handle the core works.
+<b> Your income : </b> Lenders want to be sure that you have enough income to repay any new loans. When you apply for a loan (whether secured or unsecured), lenders will ask for proof of income. Your pay stubs, tax returns, and bank statements will most likely provide sufficient proof of income. Then, lenders will evaluate how much of a burden your new loan payment will be relative to your monthly income. They typically do this by calculating a  <b>debt-to-income ratio 
+</b>
 
-3. We bring the best in the company and the candidate by amalgamating the objectives of both the company and the candidate.
-
+We have a team with a collective experience of more than 2 decades into the financial service industry. We also have a strong back office team well versed with the industry requirements, making the whole process of fund raising a smooth sail for our clients

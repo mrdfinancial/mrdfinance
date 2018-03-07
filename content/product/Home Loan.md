@@ -5,11 +5,11 @@ seo_description: MRD Finance
 featured_image: images/product_two.jpg
 ---
 
-## Our Way of Recruiting
+## What are the tax benefits on home loans? 
 
-1. We act as an advisor to the companies to understand their requirements and provide them with the right candidate.
+Of the total annual EMIs, the principal component gets tax benefit under Section 80C of the Income Tax Act. Even the partial prepayment amount qualifies for the same, but within the overall limit of Rs 1.5 lakh under Section 80C. 
 
-2. We go through the deliberate interview sessions with one to one candidates to understand their potentialities to handle the core works.
+Tax Benefit on Home Loan for payment of Interest is allowed. The maximum tax deduction allowed under Section 24 of a self-occupied property is subject to a maximum limit of <b>Rs. 2 Lakhs</b>
 
-3. We bring the best in the company and the candidate by amalgamating the objectives of both the company and the candidate.
+Lowest rate of interest
 

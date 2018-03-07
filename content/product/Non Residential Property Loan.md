@@ -5,11 +5,13 @@ seo_description: MRD Finance
 featured_image: images/product_two.jpg
 ---
 
-## Our Way of Recruiting
+### Non Residential Property Loan / Commercial Property Perches Loan
 
-1. We act as an advisor to the companies to understand their requirements and provide them with the right candidate.
+Achieving your goals requires dedication and hard work but it begins with the right environment. With a workplace tailored for your profession, you can take your professional dreams to the next level. If you are a Doctor, Chartered Accountant or a Self Employed Businessman, Non Residential Premises Loan / Commercial Property Perches Loan will help you own the workplace of your choice so that you can take a step closer to your business goals.
 
-2. We go through the deliberate interview sessions with one to one candidates to understand their potentialities to handle the core works.
+* <b> Loans for :</b>
+  * The purchase of a new or existing clinic, showroom or office .
 
-3. We bring the best in the company and the candidate by amalgamating the objectives of both the company and the candidate.
+  * You can purchase ready or under construction property .
 
+  * You may spread out your payments for the loan over a maximum term of 15 years .
