@@ -89,10 +89,12 @@
                 <div class="aspect-ratio--object contain bg-center grow" style="background-image: url('{{ ( trim .image "/" ) | absURL}}')"></div>
               </div>
             </div>
-            <div class="w-100 w-60-ns pl3-ns">
-              <h1 class="f3 fw1 baskerville mt0 lh-title"> {{ .name }}</h1>
-              <p class="f6 f5-l lh-copy">{{ .testimonial }} </p>
-              <p class="f6 f5-l lh-copy">{{ .designation }} </p>
+            <div class="w-100 w-60-ns">
+              <h1 class="f4 mt0 lh-title ttu navy"> {{ .name }}</h1>
+              <div class="f6 f5-l lh-copy ttu b">{{ .company }} </div>
+              <div class="f6 f5-l lh-copy  b"> 
+                {{ replace .testimonial "\n" "<br>" | safeHTML }} </div>
+              <p class="f6 f5-l lh-copy ttu b">{{ .designation }} </p>
             </div>
           </div>
         </div>

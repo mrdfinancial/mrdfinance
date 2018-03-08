@@ -1,25 +1,15 @@
 testimonials:
-  - name: "ABC XYZ"
-    company: ""
-    designation: "Employee"
+  - name: "Vishal Patodia"
+    company: "V.PATODIA & CO"
+    designation: "Proprietor"
     image: images/person1.jpg
-    service_taken: "Home Loan"
-    testimonial: "I got a fantastic service"
-  - name: "ABC XYZ"
-    company: ""
-    designation: "Manager"
+    testimonial: |-
+      Mr. Mahesh Dubey has great knowledge in sanctioning Loan quickly and smoothly.
+      He also a very humble, gentle and nice human being.
+  - name: "Kumbhan Das Mundhra"
+    company: "Shree Nursing Timber & Electric Stores"
+    designation: "Director"
     image: images/person2.jpg
-    service_taken: "Home Loan"
-    testimonial: "I got a very good service"
-  - name: "ABC XYZ"
-    company: ""
-    designation: "Designation"
-    image: images/person3.jpg
-    service_taken: "Home Loan"
-    testimonial: "I got a fabulous service"
-  - name: "ABC XYZ"
-    company: ""
-    designation: "Designation"
-    image: images/person4.jpg
-    service_taken: "Home Loan"
-    testimonial: "I got a Best service"
+    testimonial: |-
+      Mr. Mahesh Dubey who is having command & experience on his 
+      subject for arranging all types of loan.
