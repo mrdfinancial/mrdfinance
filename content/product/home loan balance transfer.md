@@ -3,6 +3,7 @@ title: Home Loan Balance Transfer
 seo_keywords: MRD Finance
 seo_description: MRD Finance
 featured_image: images/product_two.jpg
+order: "3"
 ---
 
 ## LOAN BALANCE TRANSFER

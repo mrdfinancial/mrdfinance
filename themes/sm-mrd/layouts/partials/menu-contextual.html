@@ -11,8 +11,8 @@
     <a href="/product" class="link f6 f3-ns ttu tracked navy b">Product</a>
   </div>
   <ul class="list-reset mb3" style="list-style: none;">
-    {{ range $currentSection.ByTitle }}
-      <li class="">
+    {{ range sort $currentSection "Params.order" }}
+      <li>
         <a href="{{ .URL }}" class="sidelink{{ if eq $currentPageUrl .URL }} active{{end}} link navy caps">
           {{ .Title }}
         </a>
