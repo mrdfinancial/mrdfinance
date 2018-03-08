@@ -391,7 +391,7 @@ body, *{
     .simple > .frame li,
     .rewind > .frame li,
     .events > .frame li {
-        width: 868px;
+        width: 880px;
     }
 
     .variablewidth li {
