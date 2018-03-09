@@ -112,6 +112,20 @@
   </span>
 </div>
 
+
+<script src="{{ "js/lory.min.js" | absURL }}"></script>
+<h2 class="w-100 f1 tc black ttu">Testimonials Testing</h2>
+
+<div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+  <p>John Doe saved us from a web disaster.</p>
+</div>
+
+
+
+
+
 {{ partial "footer.html" . }}
 <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -121,12 +135,6 @@
     });
   });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var variableWidth = document.querySelector('.js_variablewidth_testimonial');
-    lory(variableWidth, {
-    rewind: true
-    });
-  });
   document.addEventListener('DOMContentLoaded', function () {
     var variableWidth = document.querySelector('.js_variablewidth_awards');
     lory(variableWidth, {
