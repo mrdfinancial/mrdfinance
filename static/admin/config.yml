@@ -7,7 +7,7 @@ collections:
 - label: "Pages"
   name: "pages"
   files:
-    - label: "About Page"
+    - label: "About"
       name: "about"
       file: "content/about/_index.md"
       fields:
@@ -17,4 +17,53 @@ collections:
         - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
         - {label: Seo Description, name: seo_description, widget: text, required: false}
         - {label: Featured Image, name: featured_image, widget: image}
+        - {label: Content, name: body, widget: markdown}
+    - label: "Awards"
+      name: "awards"
+      file: "content/awards/_index.md"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Seo Title, name: seo_title, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Description, name: seo_description, widget: text, required: false}
+        - {label: Featured Image, name: featured_image, widget: image}
+        - {label: Content, name: body, widget: markdown}
+    - label: "EMI Calculator"
+      name: "emi_calculator"
+      file: "content/emi_calculator/_index.md"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Seo Title, name: seo_title, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Description, name: seo_description, widget: text, required: false}
+        - {label: Featured Image, name: featured_image, widget: image}
+        - {label: Content, name: body, widget: markdown}
+    - label: "Become a Partner"
+      name: "become_partner"
+      file: "content/become_partner/_index.md"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Seo Title, name: seo_title, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Description, name: seo_description, widget: text, required: false}
+        - {label: Featured Image, name: featured_image, widget: image}
+        - {label: Content, name: body, widget: markdown}
+    - label: "Contact Page"
+      name: "contact"
+      file: "content/contact/_index.md"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Seo Title, name: seo_title, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Description, name: seo_description, widget: text, required: false}
+        - {label: Google Map Coordinates, name: google_map_coordinates, widget: string}
+        - {label: Featured Image, name: featured_image, widget: image}
+        - {label: Business Name, name: business_name, widget: string}
+        - {label: Address, name: address, widget: text}
+        - {label: Phone No, name: phone, widget: string}
+        - {label: Email, name: email, widget: string}
         - {label: Content, name: body, widget: markdown}
