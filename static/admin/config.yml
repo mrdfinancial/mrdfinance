@@ -14,7 +14,6 @@ collections:
         - {label: Title, name: title, widget: string}
         - {label: Seo Title, name: seo_title, widget: string, required: false}
         - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
-        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
         - {label: Seo Description, name: seo_description, widget: text, required: false}
         - {label: Featured Image, name: featured_image, widget: image}
         - {label: Content, name: body, widget: markdown}
@@ -24,7 +23,6 @@ collections:
       fields:
         - {label: Title, name: title, widget: string}
         - {label: Seo Title, name: seo_title, widget: string, required: false}
-        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
         - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
         - {label: Seo Description, name: seo_description, widget: text, required: false}
         - {label: Featured Image, name: featured_image, widget: image}
@@ -36,7 +34,6 @@ collections:
         - {label: Title, name: title, widget: string}
         - {label: Seo Title, name: seo_title, widget: string, required: false}
         - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
-        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
         - {label: Seo Description, name: seo_description, widget: text, required: false}
         - {label: Featured Image, name: featured_image, widget: image}
         - {label: Content, name: body, widget: markdown}
@@ -46,7 +43,6 @@ collections:
       fields:
         - {label: Title, name: title, widget: string}
         - {label: Seo Title, name: seo_title, widget: string, required: false}
-        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
         - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
         - {label: Seo Description, name: seo_description, widget: text, required: false}
         - {label: Featured Image, name: featured_image, widget: image}
@@ -58,7 +54,6 @@ collections:
         - {label: Title, name: title, widget: string}
         - {label: Seo Title, name: seo_title, widget: string, required: false}
         - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
-        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
         - {label: Seo Description, name: seo_description, widget: text, required: false}
         - {label: Google Map Coordinates, name: google_map_coordinates, widget: string}
         - {label: Featured Image, name: featured_image, widget: image}
@@ -66,4 +61,19 @@ collections:
         - {label: Address, name: address, widget: text}
         - {label: Phone No, name: phone, widget: string}
         - {label: Email, name: email, widget: string}
+        - {label: Content, name: body, widget: markdown}
+    - label: "Enquiry Form"
+      name: "enquiry_form"
+      file: "content/enquiry_form/_index.md"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Seo Title, name: seo_title, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Description, name: seo_description, widget: text, required: false}
+        - {label: Featured Image, name: featured_image, widget: image}
+        - label: Loan Types
+          name: loan
+          widget: list
+          fields:
+            - {label: Name, name: name, widget: string}
         - {label: Content, name: body, widget: markdown}
