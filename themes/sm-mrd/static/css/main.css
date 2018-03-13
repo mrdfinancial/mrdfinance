@@ -32,7 +32,7 @@ body, *{
 }
 
 #social-sidebar li:first-child a { border-radius: 0 5px 0 0; }
-#social-sidebar li:last-child a { border-radius: 0 0 5px 0; }
+#social-sidebar li:last-child a { border-radius: 0 5px 5px 0; }
 
 #social-sidebar a {
 	background: #ea4c89;

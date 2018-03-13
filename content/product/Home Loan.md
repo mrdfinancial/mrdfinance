@@ -14,3 +14,5 @@ Tax Benefit on Home Loan for payment of Interest is allowed. The maximum tax ded
 
 Lowest rate of interest
 
+Buying a home is one of the biggest financial investments you may make in your lifetime; and that's not just because of the sentimental value. The sum that most of us sink into our home does make it the largest component of our investment portfolio. Take a home loan from any financial institute in low cost with long tenor and your capital may use in debt or equity funds, own business, children higher education or where you can earn more.
+

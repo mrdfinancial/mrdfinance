@@ -5,16 +5,16 @@
         <div class="aspect-ratio w-100 aspect-ratio--16x9 mb4">
           <div class="aspect-ratio--object z-2 bg-center cover" style="background-image: url(' {{ (trim .Params.featured_image "/") | absURL }}')"></div>
         </div>
-        <div class="content b f4">
+        <!-- <div class="content b f4">
           {{ .Content }}
-        </div>
+        </div> -->
       </main>
       <main class="pr4-l w-100 w-60-l">
         <form name="enquery" netlify class="w-100 w-70-m w-60-li mb4">
           <div class="flex items-start flex-wrap nl2 nr2">
             <div class="w-100 w-50-ns ph2">
               <label class="db ttu tracked gray b mb1 f6">Type Of Loan</label>
-              <select name="loan" id="loan" class="bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+              <select name="loan" id="loan" class="db w-100 pa3 ba mr2 mb3 gray" required>
                 {{ range .Params.loan }}
                 <option>{{ .name }}</option>
                 {{ end }}
@@ -22,27 +22,27 @@
             </div>
             <div class="w-100 w-50-ns ph2">
               <label class="db ttu tracked gray b mb1 f6"> Loan amount</label>
-              <input name="amount" id="amount" type="text" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+              <input name="amount" id="amount" type="text" class="input-reset db w-100 pa3 ba mr2 mb3 gray" required>
             </div>
             <div class="w-100 w-50-ns ph2">
               <label class="db ttu tracked gray b mb1 f6">Name</label>
-              <input name="name" id="name" type="text" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+              <input name="name" id="name" type="text" class="input-reset db w-100 pa3 ba mr2 mb3 gray" required>
             </div>
             <div class="w-100 w-50-ns ph2">
               <label class="db ttu tracked gray b mb1 f6">Email</label>
-              <input name="email" id="email" type="email" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+              <input name="email" id="email" type="email" class="input-reset bdb w-100 pa3 ba mr2 mb3 gray" required>
             </div>
             <div class="w-100 w-50-ns ph2">
               <label class="db ttu tracked gray b mb1 f6">Mobile No</label>
-              <input name="mobile_no" id="mobile_no" type="number" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+              <input name="mobile_no" id="mobile_no" type="number" class="input-reset db w-100 pa3 ba mr2 mb3 gray" required>
             </div>
             <div class="w-100 w-50-ns ph2">
               <label class="db ttu tracked gray b mb1 f6">Locality</label>
-              <input name="address" id="address" type="text" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+              <input name="address" id="address" type="text" class="input-reset db w-100 pa3 ba mr2 mb3 gray" required>
             </div>
             <div class="w-100 ph2">
               <label class="db ttu tracked gray b mb1 f6">Preferable time to talk</label>
-              <input name="preferable_time_to_talk" id="preferable_time_to_talk" type="text" class="input-reset bn bg-near-white pa3 br2 gray db w-100 mb3" required>
+              <input name="preferable_time_to_talk" id="preferable_time_to_talk" type="text" class="input-reset db w-100 pa3 ba mr2 mb3 gray">
             </div>
             
           </div>
