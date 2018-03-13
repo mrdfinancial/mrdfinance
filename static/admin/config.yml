@@ -90,3 +90,33 @@ collections:
           fields:
             - {label: Name, name: name, widget: string}
             - {label: Image, name: image, widget: image}
+    - label: "Awards"
+      name: "awards"
+      file: "data/awards.yml"
+      fields:
+        - label: Awards
+          name: awards
+          widget: list
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Image, name: image, widget: image}
+    - label: "Testimonials"
+      name: "testimonials"
+      file: "data/testimonials.yml"
+      fields:
+        - label: Testimonials
+          name: testimonials
+          widget: list
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Company, name: company, widget: string}
+            - {label: Ddesignation, name: designation, widget: string}
+            - {label: Image, name: image, widget: image}
+            - {label: Testimonial, name: testimonial, widget: string}
+    - label: "Meta"
+      name: "meta"
+      file: "data/meta.yml"
+      fields:
+        - {label: Page Background, name: background_image, widget: image}
+        - {label: Logo, name: logo, widget: image}
+        - {label: FB Cover, name: fb_cover, widget: image}
