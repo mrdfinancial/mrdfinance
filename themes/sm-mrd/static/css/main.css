@@ -4,6 +4,10 @@
 body, *{
   font-family: "Nunito", sans-serif;
 }
+.vericaltext{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
 
 /* ul {
 	list-style: none;
@@ -25,25 +29,27 @@ body, *{
 /* ---------- Social Sidebar ---------- */
 
 #social-sidebar {
-	left: 0;
+	/* left: 0; */
+	right: 0;
 	margin-top: -75px; /* (li * a:width) / -2 */
 	position: fixed;
 	top: 50%;
 }
 
 #social-sidebar li:first-child a { border-radius: 0 5px 0 0; }
-#social-sidebar li:last-child a { border-radius: 0 5px 5px 0; }
+#social-sidebar li:last-child a { border-radius: 5px 0 0 5px; }
 
 #social-sidebar a {
 	background: #ea4c89;
 	color: #fff;
 	display: block;
-	height: 50px;
+	height: 300px;
 	font-size: 18px;
 	line-height: 50px;
 	position: relative;
 	text-align: center;
 	width: 50px;
+
 }
 
 #social-sidebar a:hover span {
