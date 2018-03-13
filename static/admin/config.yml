@@ -77,3 +77,16 @@ collections:
           fields:
             - {label: Name, name: name, widget: string}
         - {label: Content, name: body, widget: markdown}
+- label: "Data"
+  name: "data"
+  files:
+    - label: "Associations"
+      name: "associations"
+      file: "data/associations.yml"
+      fields:
+        - label: Associations
+          name: associations
+          widget: list
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Image, name: image, widget: image}
