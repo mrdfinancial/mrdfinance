@@ -4,6 +4,20 @@ backend:
 media_folder: "static/images"
 public_folder: "/images"
 collections:
+- label: "Product"
+  name: "product"
+  folder:
+    - label: "Home Loan"
+      name: "Home Loan"
+      file: "content/product/Home Loan.md"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Seo Title, name: seo_title, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Description, name: seo_description, widget: text, required: false}
+        - {label: Featured Image, name: featured_image, widget: image}
+        - {label: Order, name: order, widget: number}
+        - {label: Content, name: body, widget: markdown}
 - label: "Pages"
   name: "pages"
   files:
