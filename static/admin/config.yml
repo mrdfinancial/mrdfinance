@@ -120,3 +120,15 @@ collections:
         - {label: Page Background, name: background_image, widget: image}
         - {label: Logo, name: logo, widget: image}
         - {label: FB Cover, name: fb_cover, widget: image}
+collections:
+  - label: "Product"
+    name: "product"
+    folder: "_product"
+    filter: {field: "language", value: "en"}
+    fields:
+      - {label: Title, name: title, widget: string}
+        - {label: Seo Title, name: seo_title, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Description, name: seo_description, widget: text, required: false}
+        - {label: Featured Image, name: featured_image, widget: image}
+        - {label: Content, name: body, widget: markdown}
