@@ -6,7 +6,7 @@ public_folder: "/images"
 collections:
 - label: "Product"
   name: "product"
-  folder:
+  files:
     - label: "Home Loan"
       name: "Home Loan"
       file: "content/product/Home Loan.md"
