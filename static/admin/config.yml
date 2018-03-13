@@ -123,7 +123,7 @@ collections:
 collections:
   - label: "Product"
     name: "product"
-    folder: "_product"
+    folder: "content/product/_index.md"
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Seo Title, name: seo_title, widget: string, required: false}
