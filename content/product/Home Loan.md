@@ -3,7 +3,7 @@ title: Home Loan
 seo_keywords: MRD Finance
 seo_description: MRD Finance
 featured_image: images/product.jpg
-order: "1"
+order: 1
 ---
 
 ## What are the tax benefits on home loans? 
