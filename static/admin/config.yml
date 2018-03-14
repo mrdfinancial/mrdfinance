@@ -8,6 +8,8 @@ collections:
   name: "products"
   folder: "content/product"
   create: true
+  filter:
+    - field: product
   fields:
     - {label: Title, name: title, widget: string}
     - {label: Seo Title, name: seo_title, widget: string, required: false}
