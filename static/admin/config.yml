@@ -36,8 +36,8 @@ collections:
             - {label: Description, name: description, widget: text}
             - {label: Link, name: link, widget: string}
         - {label: Content, name: body, widget: markdown}
-    - label: "Products"
-      name: "products_page"
+    - label: "Product"
+      name: "product"
       file: "content/product/_index.md"
       fields:
         - {label: Title, name: title, widget: string}
