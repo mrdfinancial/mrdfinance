@@ -9,7 +9,8 @@ collections:
   folder: "content/product"
   create: true
   filter: 
-    field: "order"
+    field: order
+    value: 0
   fields:
     - {label: Title, name: title, widget: string}
     - {label: Seo Title, name: seo_title, widget: string, required: false}
