@@ -13,6 +13,7 @@ collections:
     - {label: Seo Title, name: seo_title, widget: string, required: false}
     - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
     - {label: Seo Description, name: seo_description, widget: text, required: false}
+    - {label: Featured Image, name: featured_image, widget: image}
     - {label: Order, name: order, widget: number, required: true}
     - {label: Content, name: body, widget: markdown}
 - label: "Pages"
@@ -34,6 +35,16 @@ collections:
             - {label: Title, name: title, widget: string}
             - {label: Description, name: description, widget: text}
             - {label: Link, name: link, widget: string}
+        - {label: Content, name: body, widget: markdown}
+    - label: "Products"
+      name: "products"
+      file: "product/_index.md"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Seo Title, name: seo_title, widget: string, required: false}
+        - {label: Seo Keywords, name: seo_keywords, widget: string, required: false}
+        - {label: Seo Description, name: seo_description, widget: text, required: false}
+        - {label: Featured Image, name: featured_image, widget: image}
         - {label: Content, name: body, widget: markdown}
     - label: "About"
       name: "about"
