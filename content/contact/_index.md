@@ -2,7 +2,7 @@
 title: Contact
 seo_keywords: "MRD Finance"
 seo_description: "MRD Finance"
-google_map_coordinates: '22.5724788,88.35100990000001'
+google_map_coordinates: '22.5720522,88.35130509999999'
 featured_image: images/slider2.jpg
 business_name: MRD Financial Advisory Pvt Ltd
 address: |-
