@@ -9,7 +9,7 @@ collections:
   folder: "content/product"
   create: true
   filter:
-    - field: product
+    - file: "content/product/_index.md"
     - value: ""
   fields:
     - {label: Title, name: title, widget: string}
