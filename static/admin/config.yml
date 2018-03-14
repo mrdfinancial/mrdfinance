@@ -6,7 +6,7 @@ public_folder: "/images"
 collections:
 - label: "Products"
   name: "products"
-  folder: "product"
+  folder: "content/product"
   create: true
   fields:
     - {label: Title, name: title, widget: string}
@@ -38,7 +38,7 @@ collections:
         - {label: Content, name: body, widget: markdown}
     - label: "Products"
       name: "products_page"
-      file: "product/_index.md"
+      file: "content/product/_index.md"
       fields:
         - {label: Title, name: title, widget: string}
         - {label: Seo Title, name: seo_title, widget: string, required: false}
