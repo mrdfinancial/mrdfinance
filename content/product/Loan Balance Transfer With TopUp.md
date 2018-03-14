@@ -2,7 +2,7 @@
 title: Loan Balance Transfer With TopUp
 seo_keywords: MRD Finance
 seo_description: MRD Finance
-featured_image: images/product.jpg
+featured_image: images/product_four.jpg
 order: 8
 ---
 
