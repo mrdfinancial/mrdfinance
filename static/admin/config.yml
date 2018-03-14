@@ -8,6 +8,9 @@ collections:
   name: "products"
   folder: "content/product"
   create: true
+  filter:
+    - file: "content/product/_index.md"
+    - order: 0
   fields:
     - {label: Title, name: title, widget: string}
     - {label: Seo Title, name: seo_title, widget: string, required: false}
