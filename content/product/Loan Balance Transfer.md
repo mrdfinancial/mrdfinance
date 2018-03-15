@@ -2,7 +2,7 @@
 title: Loan Balance Transfer
 seo_keywords: MRD Finance
 seo_description: MRD Finance
-featured_image: images/product.jpg
+featured_image: images/product8.jpg
 order: 7
 ---
 

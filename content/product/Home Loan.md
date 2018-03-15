@@ -2,7 +2,7 @@
 title: Home Loan
 seo_keywords: MRD Finance
 seo_description: MRD Finance
-featured_image: images/product_one.jpg
+featured_image: images/product1.jpg
 order: 1
 ---
 

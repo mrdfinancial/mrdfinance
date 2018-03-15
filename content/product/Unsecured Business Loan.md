@@ -2,7 +2,7 @@
 title: Unsecured Business Loan
 seo_keywords: MRD Finance
 seo_description: MRD Finance
-featured_image: images/product_three.jpg
+featured_image: images/product2.jpg
 order: 9
 ---
 

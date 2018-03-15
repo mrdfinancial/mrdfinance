@@ -2,7 +2,7 @@
 title: Non Residential / Commercial Property Loan
 seo_keywords: MRD Finance
 seo_description: MRD Finance
-featured_image: images/product_two.jpg
+featured_image: images/product7.jpg
 order: 3
 ---
 
