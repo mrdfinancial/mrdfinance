@@ -17,17 +17,20 @@
   {{ end }}
 </section>
 {{ partial "fixed_icon.html" . }}
-<section class="pv3 bg-near-white ph3 ph4-m ph5-l">
+<section class="pv5 bg-near-white ph3 ph4-m ph5-l">
+  <h2 class="w-100 f1 tc black ttu mt0">About</h2>
+  {{ partial "separator.html" . }}
   <div class="w-90 w-70-ns tc center f4 tj dark-gray">
     {{.Content}}
     {{ range .Params.links }}
-      <a href="{{ .link }}" class="link ba bg-dark-blue ph2 pv1 br2 white hover-bg-white hover-blue bw1">Read More</a>
+      <a href="{{ .link }}" class="link ba b--dark-blue bg-white ph2 pv1 br2 dark-blue hover-bg-dark-blue hover-white bw1 dib mv2">Read More</a>
     {{ end }}
   </div>
 </section>
-
+<section class="pv5 bg-white ph3 ph4-m ph5-l">
 <script src="{{ "js/lory.min.js" | absURL }}"></script>
-<h2 class="w-100 f1 tc black ttu">Associations</h2>
+<h2 class="w-100 f1 tc black ttu mt0">Associations</h2>
+{{ partial "separator.html" . }}
 <div class="slider js_variablewidth_associations variablewidth">
   <div class="frame js_frame" style="margin-top:">
     <ul class="slides js_slides">
@@ -49,15 +52,17 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
   </span>
 </div>
-
+</section>
+<section class="pv5 bg-near-white ph3 ph4-m ph5-l">
 <script src="{{ "js/lory.min.js" | absURL }}"></script>
-<h2 class="w-100 f1 tc black ttu">Awards</h2>
+<h2 class="w-100 f1 tc black ttu mt0">Awards</h2>
+{{ partial "separator.html" . }}
 <div class="slider js_variablewidth_awards variablewidth">
   <div class="frame js_frame" style="">
     <ul class="slides js_slides">
       {{ range .Site.Data.awards.awards }}
         <li>
-        <div class="aspect-ratio aspect-ratio--16x9 br2 br--top w-100 overflow-hidden z-1">
+        <div class="aspect-ratio aspect-ratio--16x9 br2 br--top w-100 overflow-hidden z-1 bg-near-white">
           <div class="aspect-ratio--object contain bg-center grow" style="background-image: url('{{ ( trim .image "/" ) | absURL}}')"></div>
         </div>
       </li>v
@@ -72,33 +77,35 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
   </span>
 </div>
-
+</section>
 
 <script src="{{ "js/lory.min.js" | absURL }}"></script>
 <h2 class="w-100 f1 tc black ttu">Testimonials</h2>
+{{ partial "separator.html" . }}
 <div class="slider js_simple simple">
   <div class="frame js_frame" style="">
     <ul class="slides js_slides">
       {{ range .Site.Data.testimonials.testimonials }}
       <li class="js_slide " >
-        <article class="bt bb b--black-10">
-        <div class="db pv4 ph3 ph0-l no-underline black">
-          <div class="flex flex-column flex-row-ns">
-            <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-              <div class="aspect-ratio aspect-ratio--16x9 br2 br--top w-100 overflow-hidden z-1">
-                <div class="aspect-ratio--object contain bg-center grow" style="background-image: url('{{ ( trim .image "/" ) | absURL}}')"></div>
+        <article class="bb b--black-10">
+          <div class="db pv4 ph3 ph0-l no-underline black">
+            <div class="flex flex-column flex-row-ns">
+              <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+                <div class="aspect-ratio aspect-ratio--16x9 br2 br--top w-100 overflow-hidden z-1">
+                  <div class="aspect-ratio--object contain bg-center grow" style="background-image: url('{{ ( trim .image "/" ) | absURL}}')">
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 w-60-ns" style= "width:65%" ;>
+                <h1 class="f4 mt0 lh-title ttu navy"> {{ .name }}</h1>
+                <div class="f6 f5-l lh-copy ttu b">{{ .company }} </div>
+                <div class="f6 f5-l lh-copy  b"> 
+                  {{ replace .testimonial "\n" "<br>" | safeHTML }} </div>
+                <p class="f6 f5-l lh-copy ttu b">{{ .designation }} </p>
               </div>
             </div>
-            <div class="w-100 w-60-ns">
-              <h1 class="f4 mt0 lh-title ttu navy"> {{ .name }}</h1>
-              <div class="f6 f5-l lh-copy ttu b">{{ .company }} </div>
-              <div class="f6 f5-l lh-copy  b"> 
-                {{ replace .testimonial "\n" "<br>" | safeHTML }} </div>
-              <p class="f6 f5-l lh-copy ttu b">{{ .designation }} </p>
-            </div>
           </div>
-        </div>
-      </article>
+        </article>
       </li>
       {{end}}
     </ul>

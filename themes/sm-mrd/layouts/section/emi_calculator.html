@@ -9,7 +9,8 @@
 	</main>
 	<main class="pr4-l w-100 w-60-l">
 		<form name="loandata">
-	  	<div class="f3 w-100 ph2 m2 b bb b--black-10 mb3 pv2 tc navy ttu">Enter Loan Information</div>
+	  	<div class="f3 w-100 ph2 m2 b b--black-10 mb3 pv2 tc navy ttu">Enter Loan Information</div>
+	  	{{ partial "separator.html" . }}
 	  	<table class="w-100">
 		  	<tr>
 		      <td></td>
@@ -31,7 +32,8 @@
 	  	<div class="flex justify-center">
 	        <input type=button value="Clculate" class="bn pa3 bg-navy white hover-bg-dark-navy b ttu tracked br2 mt3" onClick="calculate()"></div>
 	        
-	    <div class="f3 w-100 ph2 m2 b bb b--black-10 mb3 pv2 tc navy ttu">Payment Information</div>
+	    <div class="f3 w-100 ph2 m2 b b--black-10 mb3 pv2 tc navy ttu">Payment Information</div>
+	    {{ partial "separator.html" . }}
 		<table class="w-100">
 		  	<tr>
 		      <td></td>

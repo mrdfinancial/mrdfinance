@@ -20,7 +20,6 @@ slides:
     title: Build your TEAM
 ---
 
-### Background
 We are into financial consulting services based out of Kolkata having a strong foothold in Eastern India since 2001. Over the period of our journey, we have developed an association with all leading Banks, Housing Finance Companies and Non-Banking Financial Institutions.This equips us with the liberty and flexibility to provide our services in a systematic and diversified manner. In other words, we can firmly say that we have been very successful in providing need based solutions to our clientele which is the need of the hour.
 
 ### Why MRD Financial Advisory Pvt Ltd
