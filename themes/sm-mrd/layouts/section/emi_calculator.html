@@ -13,44 +13,47 @@
 	  	{{ partial "separator.html" . }}
 	  	<table class="w-100">
 		  	<tr>
-		      <td></td>
 		      <td class="db ttu tracked gray b mb1 f6 mt3">Amount of the loan (any currency):</td>
 		      <td>
 		      	<input class="input-reset db w-100 pa3 ba mr2 mb3 gray" type="text" name=principal onChange="calculate()"></td>
 		    </tr>
-		    <tr>	
-		      <td></td>
+		    <tr>
 		      <td class="db ttu tracked gray b mb1 f6 mt3">Annual percentage rate of interest:</td>
 		      <td><input class="input-reset db w-100 pa3 ba mr2 mb3 gray" type="text" name=interest onChange="calculate()"></td>
 		    </tr>
 		    <tr>
-		      <td></td>
 		      <td class="db ttu tracked gray b mb1 f6 mt3">Repayment period in years:</td>
 		      <td><input class="input-reset db w-100 pa3 ba mr2 mb3 gray" type="text" name=years onChange="calculate()"></td>
 		    </tr>
+        <tr>
+		      <td></td>
+          <td>
+            <input type=button value="Calculate" class="bn pa3 bg-navy white hover-bg-dark-navy b ttu tracked br2 db w-100" onClick="calculate()">
+          </td>
+        </tr>
 	    </table>
-	  	<!-- <div class="flex justify-center">
-	  		        <input type=button value="Clculate" class="bn pa3 bg-navy white hover-bg-dark-navy b ttu tracked br2 mt3" onClick="calculate()"></div> -->
-	        
-	    <div class="f3 w-100 ph2 m2 b b--black-10 mb3 pv2 tc navy ttu">Payment Information</div>
+      <div class="flex justify-center">
+      </div>
+
+	    <div class="f3 w-100 ph2 m2 b b--black-10 mt5 mb3 pb2 tc navy ttu">Payment Information</div>
 	    {{ partial "separator.html" . }}
 		<table class="w-100">
 		  	<tr>
 		      <td></td>
 		      <td class="db ttu tracked gray b mb1 f6 mt3">Your monthly payment will be:</td>
 		      <td>
-		      	<input name="payment" type="text" class="input-reset db w-100 pa3 ba mr2 mb3 gray" disabled></td>
+		      	<input name="payment" type="text" class="tr input-reset db w-100 pa3 ba mr2 mb3 gray" disabled></td>
 		    </tr><tr>
 		      <td></td>
 		      <td class="db ttu tracked gray b mb1 f6 mt3">Your total payment will be:</td>
 		      <td>
-		      	<input name="total" type="text" class="input-reset db w-100 pa3 ba mr2 mb3 gray" disabled ></td>
+		      	<input name="total" type="text" class="tr input-reset db w-100 pa3 ba mr2 mb3 gray" disabled ></td>
 		    </tr>
 		    <tr>
 		      <td></td>
 		      <td class="db ttu tracked gray b mb1 f6 mt3">Your total interest payments will be:</td>
 		      <td>
-		      	<input name="totalinterest" type="text" class="input-reset db w-100 pa3 ba mr2 mb3 gray" disabled></td>
+		      	<input name="totalinterest" type="text" class="tr input-reset db w-100 pa3 ba mr2 mb3 gray" disabled></td>
 		    </tr>
 		</table>
 	</form>
@@ -68,7 +71,7 @@
     var x = Math.pow(1 + interest, payments);
     var monthly = (principal*x*interest)/(x-1);
 
-	    if (!isNaN(monthly) && 
+	    if (!isNaN(monthly) &&
 	        (monthly != Number.POSITIVE_INFINITY) &&
 	        (monthly != Number.NEGATIVE_INFINITY)) {
 

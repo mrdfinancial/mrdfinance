@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6{
     margin: 1em 1em 1em 0;
     float: left;
 }
- .sidelink 
+ .sidelink
  {
  	text-decoration: none;
     color: rgba(0,0,0,.7);
@@ -148,6 +148,7 @@ h1, h2, h3, h4, h5, h6{
     line-height: 0;
     overflow: hidden;
     white-space: nowrap;
+    min-height: 200px;
 }
 
 .frame li {
@@ -205,20 +206,15 @@ h1, h2, h3, h4, h5, h6{
     margin-right: 0;
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    margin-top: -25px;
-    display: block;
-    cursor: pointer;
+.prev, .next, .js_prev, .js_next {
+}
+.js_prev{
 }
 
 .next {
-    right: 0;
 }
 
 .prev {
-    left: 0;
 }
 
 .next.disabled,
