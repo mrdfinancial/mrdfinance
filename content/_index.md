@@ -5,7 +5,7 @@ seo_description: MRD Finance
 slides:
   - description: >-
       We can help you achieve those dreams by providing the best financial
-      solutions.
+      advice.
     image: images/slider1.jpg
     link: /about
     title: Dream Big
