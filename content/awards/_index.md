@@ -1,6 +1,6 @@
 ---
-title: Award
-seo_title: "Award | MRD Finance"
+title: Awards
+seo_title: "Awards | MRD Finance"
 seo_keywords: MRD Finance
 seo_description: MRD Finance
 ---
