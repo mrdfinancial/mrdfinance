@@ -231,6 +231,9 @@ h1, h2, h3, h4, h5, h6{
 .next svg:hover, .prev svg:hover {
     transform: scale(1.1);
 }
+.aspect-ratio--21x9{
+  padding-bottom:42.85%
+}
 
 @media screen and (min-width: 640px ) {
     /**
