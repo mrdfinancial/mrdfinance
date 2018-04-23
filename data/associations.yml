@@ -3,35 +3,27 @@ associations:
     name: HDFC Bank
   - image: images/2.jpg
     name: Axis Bank Ltd
-  - image: images/3.png
+  - image: images/10.png
     name: Bajaj Capital Ltd
   - image: images/4.jpg
-    name: Dewan Housing Finance Corporation Ltd.
-  - image: images/5.jpg
-    name: Fullerton India Credit Co. Ltd
-  - image: images/7.jpg
+    name: Kotak Mahindra Bank
+  - image: images/11.png
     name: HDB Financial Services Ltd
   - image: images/8.jpg
-    name: HDFC Bank Ltd
-  - image: images/9.jpg
+    name: aditya birla financial services limited
+  - image: images/6.jpg
     name: ICICI Bank Ltd
-  - image: images/axisbank.jpg
+  - image: images/9.jpg
     name: Indiabulls Home Finance Ltd
-  - image: images/axisbank.jpg
-    name: India Infoline Housing Finance Ltd
-  - image: images/axisbank.jpg
-    name: Kotak Mahindra Bank Ltd
-  - image: images/axisbank.jpg
+  - image: images/12.png
     name: L& T Finance
-  - image: images/axisbank.jpg
+  - image: images/5.png
     name: Reliance Home Finance Ltd
-  - image: images/axisbank.jpg
+  - image: images/14.png
     name: Reliance Commercial Finance Ltd
-  - image: images/axisbank.jpg
-    name: Religare Finvast Ltd
-  - image: images/axisbank.jpg
+  - image: images/15.jpg
     name: Standard Chartered Bank
-  - image: images/axisbank.jpg
+  - image: images/7.jpg
     name: Tata Capital Housing Finance Ltd
-  - image: images/axisbank.jpg
+  - image: images/3.png
     name: Yes Bank
