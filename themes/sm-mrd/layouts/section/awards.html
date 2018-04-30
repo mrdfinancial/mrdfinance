@@ -22,6 +22,8 @@
 <script>
  var bb = baguetteBox.run('.gallery');
  document.addEventListener("turbolinks:before-cache", function() {
-   bb.destroy()
+   if(bb){
+     bb.destroy()
+   }
  })
 </script>
