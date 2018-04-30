@@ -132,7 +132,7 @@
     rewind: true
     });
 
-    var variableWidth = document.querySelector('.js_variablewidth_associations');
+    variableWidth = document.querySelector('.js_variablewidth_associations');
     var slider3 = lory(variableWidth, {
     rewind: true
     });
@@ -146,8 +146,8 @@
 
   document.addEventListener("turbolinks:before-cache", function() {
     mySiema.destroy()
-    slider1.destroy()
-    slider2.destroy()
-    slider3.destroy()
+    if(slider1) slider1.destroy()
+    if(slider2) slider2.destroy()
+    if(slider3) slider3.destroy()
   })
 </script>
