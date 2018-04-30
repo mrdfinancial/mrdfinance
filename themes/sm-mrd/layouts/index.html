@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 <script src="{{ "js/siema.min.js" | absURL }}" data-turbolinks-eval="true"></script>
+<script src="{{ "js/lory.min.js" | absURL }}" data-turbolinks-eval="true"></script>
 <section id="slider" class="siema">
   {{ range .Params.slides }}
   <div class="flex items-stretch items-center flex-wrap">
@@ -28,7 +29,7 @@
   </div>
 </section>
 <section class="pv5 bg-white ph3 ph4-m ph5-l">
-  <script src="{{ "js/lory.min.js" | absURL }}"></script>
+  <script src="{{ "js/lory.min.js" | absURL }}" data-turbolinks-eval="true"></script>
   <h2 class="f2 w-100 tc dark-blue ttu mt0">Associations</h2>
   {{ partial "separator.html" . }}
   <div class="slider js_variablewidth_associations variablewidth">
@@ -55,7 +56,6 @@
   </div>
 </section>
 <section class="pv5 bg-near-white ph3 ph4-m ph5-l">
-  <script src="{{ "js/lory.min.js" | absURL }}"></script>
   <h2 class="f2 w-100 tc dark-blue ttu mt0">Awards</h2>
   {{ partial "separator.html" . }}
   <div class="slider js_variablewidth_awards variablewidth">
