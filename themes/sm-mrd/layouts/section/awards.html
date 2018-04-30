@@ -20,5 +20,8 @@
   </div>
 {{ partial "footer.html" . }}
 <script>
- baguetteBox.run('.gallery');
+ var bb = baguetteBox.run('.gallery');
+ document.addEventListener("turbolinks:before-cache", function() {
+   bb.destroy()
+ })
 </script>

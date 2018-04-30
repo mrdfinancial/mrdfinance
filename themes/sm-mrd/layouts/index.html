@@ -123,17 +123,17 @@
 <script>
   document.addEventListener('turbolinks:load', function () {
     var simple = document.querySelector('.js_simple');
-    lory(simple, {
+    var slider1 = lory(simple, {
     rewind: true
     });
 
     var variableWidth = document.querySelector('.js_variablewidth_awards');
-    lory(variableWidth, {
+    var slider2 = lory(variableWidth, {
     rewind: true
     });
 
     var variableWidth = document.querySelector('.js_variablewidth_associations');
-    lory(variableWidth, {
+    var slider3 = lory(variableWidth, {
     rewind: true
     });
   });
@@ -145,6 +145,9 @@
   var siema_interval = setInterval(()=>mySiema.next(),5000)
 
   document.addEventListener("turbolinks:before-cache", function() {
-    // mySiema.destroy()
+    mySiema.destroy()
+    slider1.destroy()
+    slider2.destroy()
+    slider3.destroy()
   })
 </script>
