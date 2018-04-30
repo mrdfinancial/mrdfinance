@@ -143,4 +143,8 @@
   }
   var mySiema=new Siema({duration:250,loop:true,});
   var siema_interval = setInterval(()=>mySiema.next(),5000)
+
+  document.addEventListener("turbolinks:before-cache", function() {
+    mySiema.destroy()
+  })
 </script>
