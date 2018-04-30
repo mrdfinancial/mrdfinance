@@ -1,7 +1,14 @@
 ---
-title: MRD Finance
-seo_keywords: MRD Finance
-seo_description: MRD Finance
+title: MRD Financial
+seo_title: MRD Financial - Home loans and loan against property in kolkata
+seo_keywords: >-
+  Home Loan, Loan Against Property, Under construction or ready commercial
+  property loan, Drop line Overdraft Facility, Overdraft Facility, Unsecured
+  Business Loan
+seo_description: >-
+  We are the best service provider for home loans and loan against Property in
+  Kolkata. we have association with all leading Privet Banks and NBFCs. we helf
+  the customer to get the right product with utmost convenience.
 slides:
   - description: >-
       We can help you achieve those dreams by providing the best financial
