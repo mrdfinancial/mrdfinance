@@ -121,7 +121,7 @@
 
 {{ partial "footer.html" . }}
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('turbolinks:load', function () {
     var simple = document.querySelector('.js_simple');
     lory(simple, {
     rewind: true
