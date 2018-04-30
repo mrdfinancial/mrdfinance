@@ -121,21 +121,19 @@
 
 {{ partial "footer.html" . }}
 <script>
-  document.addEventListener('turbolinks:load', function () {
-    var simple = document.querySelector('.js_simple');
-    var slider1 = lory(simple, {
-    rewind: true
-    });
+  var simple = document.querySelector('.js_simple');
+  var slider1 = lory(simple, {
+  rewind: true
+  });
 
-    var variableWidth = document.querySelector('.js_variablewidth_awards');
-    var slider2 = lory(variableWidth, {
-    rewind: true
-    });
+  var variableWidth = document.querySelector('.js_variablewidth_awards');
+  var slider2 = lory(variableWidth, {
+  rewind: true
+  });
 
-    variableWidth = document.querySelector('.js_variablewidth_associations');
-    var slider3 = lory(variableWidth, {
-    rewind: true
-    });
+  variableWidth = document.querySelector('.js_variablewidth_associations');
+  var slider3 = lory(variableWidth, {
+  rewind: true
   });
 
   if(siema_interval){
