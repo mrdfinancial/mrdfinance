@@ -3,7 +3,6 @@
 {{ partial "fixed_icon.html" . }}
 <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 <link href='{{ "dist/bb.min.css" | absURL}}' rel="stylesheet"/>
-<script type="text/javascript" src='{{ "dist/bb.min.js" | absURL}}'></script>
   <div class="ph3 ph4-m ph5-l" >
     <div class="content w-100 mb5">
       {{ .Content }}
@@ -20,5 +19,10 @@
   </div>
 {{ partial "footer.html" . }}
 <script>
- baguetteBox.run('.gallery');
+ var bb = baguetteBox.run('.gallery');
+ document.addEventListener("turbolinks:before-cache", function() {
+   if(bb){
+     bb.destroy()
+   }
+ })
 </script>

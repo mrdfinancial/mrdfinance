@@ -5,12 +5,34 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <title>{{.Title}}</title>
+    <meta property="og:type" content="website" />
+    {{ if .Params.seo_title }}
+    <title>{{.Params.seo_title}}</title>
+    <meta property="og:title" content="{{.Params.seo_title}}" />
+    {{else}}
+    <title>{{.Params.title}}</title>
+    <meta property="og:title" content="{{.Params.Title}}" />
+    {{ end }}
+    <meta property="og:description" content="{{.Params.seo_description}}" />
+    {{ if .Params.seo_description }}
+    <meta name="description" content="{{.Params.seo_description}}" />
+		{{end}}
+    {{ if .Params.seo_keywords }}
+    <meta name="keyowrds" content="{{.Params.seo_keywords}}" />
+		{{end}}
+		{{ if .Params.featured_image }}
+    <meta property="og:image" content="{{ (trim .Params.featured_image "/") | absURL }}" />
+		{{ else }}
+    <meta property="og:image" content="{{ (trim .Site.Data.meta.fb_cover "/") | absURL}}" />
+		{{end}}
     <link href="https://fonts.googleapis.com/css?family=Muli:700i|Open+Sans:400,700" rel="stylesheet">
     <link href="{{ "css/main.css" | absURL }}" rel="stylesheet" type="text/css" />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-    <!-- <script src="{{ "js/turbolinks.js" | absURL }}"></script> -->
+    <script type="text/javascript" src='{{ "dist/bb.min.js" | absURL}}' data-turbolinks-eval="true"></script>
+    <script src="{{ "js/siema.min.js" | absURL }}" data-turbolinks-eval="true"></script>
+    <script src="{{ "js/lory.min.js" | absURL }}" data-turbolinks-eval="true"></script>
+    <script src="{{ "js/turbolinks.js" | absURL }}"></script>
   </head>
   <body class="pt4">
     <header>

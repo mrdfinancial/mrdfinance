@@ -1,5 +1,4 @@
 {{ partial "header.html" . }}
-<script src="{{ "js/siema.min.js" | absURL }}"></script>
 <section id="slider" class="siema">
   {{ range .Params.slides }}
   <div class="flex items-stretch items-center flex-wrap">
@@ -18,7 +17,7 @@
 </section>
 {{ partial "fixed_icon.html" . }}
 <section class="pv5 bg-near-white ph3 ph4-m ph5-l">
-  <h2 class="f2 f1-ns w-100 f1 tc black ttu mt0">About</h2>
+  <h2 class="f2 w-100 tc dark-blue ttu mt0">About</h2>
   {{ partial "separator.html" . }}
   <div class="w-90 w-70-ns tc center f4 tj dark-gray">
     {{.Content}}
@@ -28,8 +27,8 @@
   </div>
 </section>
 <section class="pv5 bg-white ph3 ph4-m ph5-l">
-  <script src="{{ "js/lory.min.js" | absURL }}"></script>
-  <h2 class="f2 f1-ns w-100 f1 tc black ttu mt0">Associations</h2>
+  <script src="{{ "js/lory.min.js" | absURL }}" data-turbolinks-eval="true"></script>
+  <h2 class="f2 w-100 tc dark-blue ttu mt0">Associations</h2>
   {{ partial "separator.html" . }}
   <div class="slider js_variablewidth_associations variablewidth">
     <div class="tc mb3">
@@ -55,8 +54,7 @@ frame
   </div>
 </section>
 <section class="pv5 bg-near-white ph3 ph4-m ph5-l">
-  <script src="{{ "js/lory.min.js" | absURL }}"></script>
-  <h2 class="f2 f1-ns w-100 f1 tc black ttu mt0">Awards</h2>
+  <h2 class="f2 w-100 tc dark-blue ttu mt0">Awards</h2>
   {{ partial "separator.html" . }}
   <div class="slider js_variablewidth_awards variablewidth">
     <div class="tc mb3">
@@ -81,7 +79,7 @@ frame
   </div>
 </section>
 <section class="pv5 bg-white ph3 ph4-m ph5-l">
-  <h2 class="f2 f1-ns w-100 mt0 f1 tc black ttu">Testimonials</h2>
+  <h2 class="f2 w-100 tc dark-blue ttu mt0">Testimonials</h2>
   {{ partial "separator.html" . }}
   <div class="slider js_simple simple">
     <div class="tc mb3">
@@ -121,26 +119,31 @@ frame
 
 {{ partial "footer.html" . }}
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var simple = document.querySelector('.js_simple');
-    lory(simple, {
-    rewind: true
-    });
+  var simple = document.querySelector('.js_simple');
+  var slider1 = lory(simple, {
+  rewind: true
+  });
 
-    var variableWidth = document.querySelector('.js_variablewidth_awards');
-    lory(variableWidth, {
-    rewind: true
-    });
+  var variableWidth = document.querySelector('.js_variablewidth_awards');
+  var slider2 = lory(variableWidth, {
+  rewind: true
+  });
 
-    var variableWidth = document.querySelector('.js_variablewidth_associations');
-    lory(variableWidth, {
-    rewind: true
-    });
+  variableWidth = document.querySelector('.js_variablewidth_associations');
+  var slider3 = lory(variableWidth, {
+  rewind: true
   });
 
   if(siema_interval){
     clearInterval(siema_interval)
   }
-  var mySiema=new Siema({duration:250,loop:true,});
+  var mySiema = new Siema({duration:250,loop:true,});
   var siema_interval = setInterval(()=>mySiema.next(),5000)
+
+  document.addEventListener("turbolinks:before-cache", function() {
+    mySiema.destroy()
+    if(slider1) slider1.destroy()
+    if(slider2) slider2.destroy()
+    if(slider3) slider3.destroy()
+  })
 </script>
