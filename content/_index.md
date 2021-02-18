@@ -2,7 +2,7 @@
 title: MRD Financial
 seo_title: MRD Financial - Home loans and loan against property in kolkata
 seo_keywords: >-
-  Home Loan, Loan Against Property, Under construction or ready commercial
+  Home Loan, Loans Against Property, Under construction or ready commercial
   property loan, Drop line Overdraft Facility, Overdraft Facility, Unsecured
   Business Loan
 seo_description: >-
